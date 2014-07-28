@@ -16,7 +16,6 @@
   },
   "license": "ISC",
   "dependencies": {
-    "canvas": "^1.1.5",
     "express": "^4.6.1",
     "nopt": "^3.0.1",
     "swig": "^1.4.1"
