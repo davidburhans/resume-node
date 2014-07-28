@@ -9,20 +9,49 @@
             ,"location": "CorvisaCloud, LLC"
             ,"date": "March 2014 - Present"
             ,"description":"Maintained and extended a real-time in-house Pusher-like API service. Made changes so application could be containerized, distributed, run, and auto-discover other nodes on an in-house cloud."
+            ,"projects":[]
             ,"tags":["linux", "nodejs", "node", "node.js", "virtualization", "zeromq", "zmq", "nosql", "redis", "mongodb", "docker", "docker.io", "git", "open source", "oss", "Web Sockets", "distributed", "scalability", "container", "socket.io", "primus.io", "express", "pm2", "cluster", "nginx", "infrastructure", "phantomjs", "self-discovery"]
         }
         ,{
             "title": "Software Engineer IV"
             ,"location": "StreetLinks @ Corvisa Services, LLC"
             ,"date": "April 2013 - March 2014"
-            ,"description":"Performed critical maintenence and infrastructure-related updates. Fixed Internet Explorer incompatibilites. Hardened site security for banking audits. Helped streamline production release workflow."
+            ,"description":"Performed critical maintenance and infrastructure-related updates. Fixed Internet Explorer incompatibilities. Hardened site security for banking audits. Helped streamline production release workflow."
+            ,"projects": [{
+                    "name": "Security Audit",
+                    "description": "Analyzed our site before the security audit to plug any existing security issues. Resolved all issues that arose during the audit."
+                }
+                ,{
+                    "name": "IE Ajax",
+                    "description": "Replaced entire IE-only AJAX tool-set with a custom tool-set that used the same interface but was cross-browser compatible. Fixed issues on hundreds of pages by doing this."
+                }
+                ,{
+                    "name": "IE Xml Data Islands",
+                    "description": "This is another IE-only technology that assisted with doing complex XML manipulation on the client. Implemented an interface that would execute the XML manipulations on the server, if necessary, or modified the page to not use XML."
+                }
+                ,{
+                    "name": "Critical Maintenance",
+                    "description": "'It doesn't matter what it is, I know I can give it to you and it will be taken care of.' from performance review."
+            }]
             ,"tags":[".Net", "C#", "MVC", "AJAX", "SQL", "Continuous Integration", "Automation", "Agile", "HTML", "Javascript", "jQuery", "Git", "Jira", "Bamboo", "IIS", "Full Stack", "Security", "optimization", "performance", "audit", "infrastructure"]
         }
         ,{
             "title": "Development Lead"
             ,"location": "MangoMoving @ Corvisa Services, LLC"
             ,"date": "April 2012 - April 2013"
-            ,"description":"Led team to redesign core business software on a tight deadline. Primary goals of the redesign were: stability, scalability, maintainability, and SalesForce integration. Standardized, then automated, entire release workflow using Jira, Git, and Bamboo to accomodate rapidly changing business needs."
+            ,"description":"Led team to redesign core business software on a tight deadline. Primary goals of the redesign were: stability, scalability, maintainability, and SalesForce integration. Standardized, then automated, entire release workflow using Jira, Git, and Bamboo to accommodate rapidly changing business needs."
+            ,"projects": [{
+                    "name": "SalesForce Integration",
+                    "description": "Two-way data integration. Automatically move leads through SalesForce process in response to actions taken in the application."
+                }
+                ,{
+                    "name": "Pricing Engine",
+                    "description": "One of the reasons of the re-design was that the pricing algorithms changed so often and were not centralized. To fix this, we centralized and versioned all pricing algorithms."
+                }
+                ,{
+                    "name": "Continuous Integration",
+                    "description": "Created automated build and release process to streamline the deployment of the application. Saved the team over ten hours a week."
+            }]
             ,"tags":[".Net", "C#", "MVC", "AJAX", "SQL", "PostgreSQL", "Continuous Integration", "Automation", "Agile", "HTML", "Javascript", "jQuery", "Git", "Jira", "Bamboo", "IIS", "Full Stack", "SalesForce", "infrastructure", "CQRS"]
         }
         ,{
@@ -30,13 +59,25 @@
             ,"location": "DCI Marketing"
             ,"date": "September 2011 - April 2012"
             ,"description": "Used .Net WebForms and WinForms for real-time monitoring and updating of consumer-facing kiosks via WCF web services."
+            ,"projects": [{
+                "name": "Remote Kiosk Update",
+                "description": "Six-month contract to improve the provisioning and upgrading of consumer kiosks (Windows CE) which may be deployed anywhere in the world and have infrequent internet access."
+            }]
             ,"tags": [".Net", "WebForms", "WinForms", "WCF", "WebServices", "Full Stack", "Javascript", "AJAX","HTML", "C#", "SQL", "T-SQL", "MS-SQL", "SVN", "jQuery", "Windows"]
         }
         ,{
             "title": "Software Engineer"
-            ,"location": "Vesvius Technologies, LLC"
+            ,"location": "Vesuvius Technologies, LLC"
             ,"date":"February 2011 - September 2011"
-            ,"description": "Used agile principles to expand and improve a cutting-edge high-volume, high-availability web site with real-time updates. Integrated at durable, distributed, and aynchronous interprocess communication system into the existing architecture. Built automatic configuration and deployment solutions for said system."
+            ,"description": "Used agile principles to expand and improve a cutting-edge high-volume, high-availability web site with real-time updates. Integrated at durable, distributed, and asynchronous inter-process communication system into the existing architecture. Built automatic configuration and deployment solutions for said system."
+            ,"projects": [{
+                    "name": "US Bank Integration",
+                    "description": "Implemented just-in-time ordering of personalized US Bank Gift Cards in order to make company's inventory more lean."
+                }
+                ,{
+                    "name": "Service Bus",
+                    "description": "Implemented NServiceBus to facilitate real-time communication between our application servers and our web socket servers. Used to notify users of issues before they spent money."
+            }]
             ,"tags": [".Net", "C#", "MVC", "WCF", "Web Sockets", "HTML", "Javascript", "SQL", "Team Foundation Server", "Service Bus", "Service Broker", "Message Queue", "RabbitMQ", "MSMQ", "NServiceBus", "SQL", "MS-SQL", "T-SQL", "Web Scale", "Windows", "scalability", "Full Stack", "infrastructure", "self-discovery"]
         }
         ,{
@@ -44,6 +85,54 @@
             ,"location": "Olim Technologies Group, LLC"
             ,"date":"March 2006 - February 2011"
             ,"description": "Designed and developed varied applications using C++, Delphi, and .Net. Extensive use of SQL in both development and optimization. Developed a reusable web service to allow communications from our flagship Document Management System to a remote database and file server over SSL."
+            ,"projects": [{
+                    "name": "SawDust Investment Aggregator",
+                    "description": "Hooked into Exchange to scrape investment emails for raw investment data. Created a user-friendly UI to allow end-users to configure new rules for email scraping depending on custom filters and view aggregated investment data."
+                }
+                ,{
+                    "name": "Collybus Document Management System",
+                    "description": "Created the second generation of company's flagship DMS. Implemented pluggable architecture in order to reduce code duplication and decrease development time. Lead architect on third generation."
+                }
+                ,{
+                    "name": "Document Imaging",
+                    "description": "Maintained and improved core document import utility for Collybus. Leveraged Collybus's new pluggable architecture to create more cohesion between products. Required knowledge of desktop scanning, check scanning, bulk processing and indexing of documents."
+                }
+                ,{
+                    "name": "Email Archiver",
+                    "description": "Hooked directly into Exchange to gather, index, and store all emails coming for retention purposes. Integrated directly into our DMS with an email specific UI placed on top."
+                }
+                ,{
+                    "name": "Digital Voice Recorder",
+                    "description": "Created a tool for StateFarm Insurance to add audio recording support to Collybus. Once captured, the audio was compressed using the Speex codec, indexed, and stored for future searching and retrieval."
+                }
+                ,{
+                    "name": "Kemper Inbox",
+                    "description": "Created a software package based on Collybus that allowed Kemper (Unitrin) Insurance to eliminate all incoming mail. Instead the mail was routed to our data center, scanned, indexed, imported into Collybus, and then routed to the appropriate recipient according to customized routing rules."
+                }
+                ,{
+                    "name": "Ziegler A2Z",
+                    "description": "Created web site to track and aggregate financial statistics of senior living facilities around the country."
+                }
+                ,{
+                    "name": "Encompass Education",
+                    "description": "Helped implement a generic examination framework for national scholastic testing on top of Collybus."
+                }
+                ,{
+                    "name": "Badger Mutual Insurance",
+                    "description": "Software consultant"
+                }
+                ,{
+                    "name": "The Equitable Bank",
+                    "description": "Software consultant"
+                }
+                ,{
+                    "name": "Tower Credit Union",
+                    "description": "Software consultant"
+                }
+                ,{
+                    "name": "Action Express",
+                    "description": "Software consultant"
+            }]
             ,"tags": ["C++", "Pascal", "Delphi", "HTML", "Javascript", "VCL", ".Net", "C#", "Visual Basic", "IIS", "SQL", "T-SQL", "MS-SQL", "Windows", "SaaS", "scalability", "N-tier", "architecture", "design", "document management", "PostScript", "document imaging", "voice recording", "automation", "infrastructure", "Full Stack", "cvs", "Visual Source Safe", "vss"]
         }
         ,{
@@ -51,6 +140,7 @@
             ,"location": "Milwaukee School of Engineering"
             ,"date": "Class of 2006"
             ,"description":"Advanced knowledge of C++ and Motorola embedded systems assembly. Educated in software design and architecture. Real world experience working for the state of WI on an electronic benefits transfer (EBT) system. Very proficient in all Microsoft Office products. Worked extensively with MFC and plug-in architecture while doing senior design project for NVIDIA which involved emulating VBIOS of NVIDIA cards both locally and over a network."
+            ,"projects": []
             ,"tags": ["Software Engineering", "C++", "Linux", "Windows", "Java", "68000 assembly", "embedded systems", "software design", "software architecture", "Mathematics", "artificial intelligence", "robotics", "machine learning"]
         }]
     ,"certifications": ["MCTS","MCPD"]

@@ -59,11 +59,6 @@ data = sortArrays(data);
 
 app.use('/css', express.static(path.join(__dirname, 'css')));
 
-app.get('/data', function (req, res) {
-    res.json(data);
-    res.end();
-});
-
 var output;
 
 app.get('/', function (req, res) {

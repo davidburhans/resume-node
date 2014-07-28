@@ -12,47 +12,47 @@
 <body id="home">
     <main class='center'>
         <header>
-        <h1>
+        <div class="name">
             {{ name }}
             <img class='contact' title='{{name}}' src='{{ email_src }}' alt='Contact me' />
-        </h1>
-        <h2>{{ title }}</h2>
+        </div>
+        <h1>{{ title }}</h1>
         <p>
         {{ objective }}
         </p>
         </header>
         <div>
             <aside>
-                <h3>Interests</h3>
+                <p class="title">Interests</p>
                 <summary class='interests'>
                     {% for tag in interests %}
-                    <detail class='tag'>
+                    <h3>
                         {{ tag }}
-                    </detail>
+                    </h3>
                     {% endfor %}
                 </summary>
-                <h3>Languages</h3>
+                <p class="title">Languages</p>
                 <summary class='languages'>
                     {% for tag in languages %}
-                    <detail class='tag'>
+                    <h3>
                         {{ tag }}
-                    </detail>
+                    </h3>
                     {% endfor %}
                 </summary>
-                <h3>Technologies</h3>
+                <p class="title">Technologies</p>
                 <summary class='technologies'>
                     {% for tag in technologies %}
-                    <detail class='tag'>
+                    <h3>
                         {{ tag }}
-                    </detail>
+                    </h3>
                     {% endfor %}
                 </summary>
-                <h3>Certifications</h3>
+                <p class="title">Certifications</p>
                 <summary class='certifications'>
                     {% for tag in certifications %}
-                    <detail class='tag'>
+                    <h3>
                         {{ tag }}
-                    </detail>
+                    </h3>
                     {% endfor %}
                 </summary>
             </aside>
@@ -65,15 +65,25 @@
                     {{ job.date }}
                 </p>
                 <summary>
-                    <detail class='description'>
+                    <h2 class='description'>
                         {{ job.description }}
-                    </detail>
-                    <a href='#{{job.id}}' class='toggle-skills'>Show Skills...<a>
-                    {% for tag in job.tags %}
-                    <detail class='tag skills'>
-                        {{ tag }}
-                    </detail>
-                    {% endfor %}
+                    </h2>
+                    <a class='toggle-details'>Show Details...<a>
+                    <summary class='details'>
+                        {% if job.projects != null %}
+                        <ul>
+                        {% for project in job.projects %}
+                        <li><strong>{{ project.name }}:</strong> {{ project.description }}</li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+
+                        {% for tag in job.tags %}
+                        <h3>
+                            {{ tag }}
+                        </h3>
+                        {% endfor %}
+                    </summary>
                 </summary>
             </section>
             {% endfor %}
@@ -81,25 +91,24 @@
     </main>
     <script type="text/javascript">
         var display = 'inline-block';
-        function skillsClick() {
-            var details = this.parentNode.querySelectorAll('.skills');
+        function detailsClick() {
+            var details = this.parentNode.querySelectorAll('.details');
             for (var idx = 0; idx < details.length; ++idx) {
                 el = details[idx];
                 if (el.style.display == display) {
-                    this.text = "Show Skills...";
+                    this.textContent = "Show Details...";
                     el.style.display = 'none';
                 } else {
-                    this.text = "Hide Skills...";
+                    this.textContent = "Hide Details...";
                     el.style.display = display;
                 }
             }
         }
         document.addEventListener("DOMContentLoaded", function() {
-            var skillLinks = document.querySelectorAll('.toggle-skills');
-            for (var idx = 0; idx < skillLinks.length; ++idx) {
-                skillLinks[idx].onclick = skillsClick;
+            var detailsLinks = document.querySelectorAll('.toggle-details');
+            for (var idx = 0; idx < detailsLinks.length; ++idx) {
+                detailsLinks[idx].onclick = detailsClick;
             }
-
         });
 
     </script>

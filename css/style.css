@@ -63,7 +63,7 @@ table{
     border-spacing:0;
 }
 
-body { min-width: 750px; background-color: #4B92A6; color: #262626;}
+body { min-width: 750px; background-color: #4B92A6; color: #262626; font-size: 16px;}
 
 .center {
     margin-left: auto;
@@ -75,40 +75,48 @@ body { min-width: 750px; background-color: #4B92A6; color: #262626;}
 .title { font-weight: bold;}
 .date { font-style: italic; padding:5px 0 10px 5px;}
 
-
-h1 { font-size:200%; padding-bottom: 5px 0 10px 0; }
+strong { display: inline; font-style: italic; }
+div.name { font-size:32px; padding-bottom: 5px 0 10px 0; }
 img.contact { vertical-align: baseline; margin: 6px 0 0 15px;}
-h2 { font-size:150%; padding-bottom: 10px; color: #DAA520; }
-h3 { font-weight: bold;}
-
-summary {}
-detail.description { display:block; }
-detail.tag {
+h1 { font-size:24px; padding-bottom: 10px; color: #DAA520; }
+h2 { display:block; }
+h3 {
     padding: 4px;
-    margin: 1px;
+    margin: 1px 0 2px 0;
     background-color: #DAA520;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 4px;
     text-transform: capitalize;
-    font-size: small;
+    font-size: 14px;
 }
 
 section {
     width:81%;
-    background-color: #FEE093;
-    border-radius: 10px;
+    background-color: #FFF;
+    border-radius: 4px;
     padding: 10px 5px 10px 5px;
-    margin: 5px 0 10px 0;}
+    margin: 5px 0 10px 0;
+}
 aside {
     float: right;
     width: 15%;
     max-width: 300px;
     min-width: 100px;
     background-color: #D9F7FF;
-    border-radius: 10px;
-    padding: 10px 5px 10px 5px;}
 
-.toggle-skills {display: block; padding:5px 0 5px 0;}
-detail.skills { display:none; }
-header { background-color: #D9F7FF; padding: 5px; border-radius: 10px; margin-bottom: 10px;}
+    border-radius: 4px;
+    padding: 10px 5px 10px 5px;
+}
+
+.toggle-details {display: block; padding:5px 0 5px 0; color: #DAA520; cursor: pointer;}
+.details { display:none; font-size: 14px;}
+.details>ul {
+    list-style: disc;
+}
+
+.details>ul>li {
+    padding: 3px 0px 3px 0px;
+    margin: 3px 0px 3px 20px;
+}
+header { background-color: #D9F7FF; padding: 5px; border-radius: 4px; margin-bottom: 10px;}
 header>p { font-style: italic; }
