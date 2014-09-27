@@ -10,7 +10,7 @@
             ,"date": "March 2014 - Present"
             ,"description":"Maintained and extended a real-time in-house Pusher-like API service. Made changes so application could be containerized, distributed, run, and auto-discover other nodes on an in-house cloud."
             ,"projects":[]
-            ,"tags":["linux", "nodejs", "node", "node.js", "virtualization", "zeromq", "zmq", "nosql", "redis", "mongodb", "docker", "docker.io", "git", "open source", "oss", "Web Sockets", "distributed", "scalability", "container", "socket.io", "primus.io", "express", "pm2", "cluster", "nginx", "infrastructure", "phantomjs", "self-discovery"]
+            ,"tags":["linux", "node.js", "virtualization", "zeromq", "nosql", "redis", "mongodb", "docker", "git", "open source", "Web Sockets", "distributed", "scalability", "container", "socket.io", "primus.io", "express", "pm2", "cluster", "nginx", "infrastructure", "phantomjs", "self-discovery"]
         }
         ,{
             "title": "Software Engineer IV"
@@ -33,7 +33,7 @@
                     "name": "Critical Maintenance",
                     "description": "'It doesn't matter what it is, I know I can give it to you and it will be taken care of.' from performance review."
             }]
-            ,"tags":[".Net", "C#", "MVC", "AJAX", "SQL", "Continuous Integration", "Automation", "Agile", "HTML", "Javascript", "jQuery", "Git", "Jira", "Bamboo", "IIS", "Full Stack", "Security", "optimization", "performance", "audit", "infrastructure"]
+            ,"tags":[".Net", "C#", "MVC", "AJAX", "SQL", "Continuous Integration", "Automation", "Agile", "HTML", "Javascript", "jQuery", "git", "Jira", "Bamboo", "IIS", "Full Stack", "Security", "optimization", "performance", "audit", "infrastructure"]
         }
         ,{
             "title": "Development Lead"
@@ -52,7 +52,7 @@
                     "name": "Continuous Integration",
                     "description": "Created automated build and release process to streamline the deployment of the application. Saved the team over ten hours a week."
             }]
-            ,"tags":[".Net", "C#", "MVC", "AJAX", "SQL", "PostgreSQL", "Continuous Integration", "Automation", "Agile", "HTML", "Javascript", "jQuery", "Git", "Jira", "Bamboo", "IIS", "Full Stack", "SalesForce", "infrastructure", "CQRS"]
+            ,"tags":[".Net", "C#", "MVC", "AJAX", "SQL", "PostgreSQL", "Continuous Integration", "Automation", "Agile", "HTML", "Javascript", "jQuery", "git", "Jira", "Bamboo", "IIS", "Full Stack", "SalesForce", "infrastructure", "CQRS"]
         }
         ,{
             "title": "Software Contractor"
