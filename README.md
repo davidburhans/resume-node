@@ -1,7 +1,7 @@
 About
 =====
 
-A little resume web site I whipped up.
+A little [resume web site](http://davidburhans.github.io/resume-node/index.html) I whipped up.
 
 Dependencies
 ============
