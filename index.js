@@ -90,7 +90,7 @@ data.email_src = buildEmailDataUrl(data.email);
 
 if(parsed.outputfile) {
     output = template(data);
-    require('fs').writeFile(parsed.outputfile, output);
+    require('fs').writeFileSync(parsed.outputfile, output);
 } else {
     var server = http.createServer(app);
     server.listen(parsed.port || 4000);
