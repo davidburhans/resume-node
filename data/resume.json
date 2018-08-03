@@ -5,12 +5,51 @@
     ,"objective": "To find an environment that will foster my excitement about technology and expose me to similarly excited people. In doing so, I hope to be immersed in a culture of learning and sharing. I want to turn ideas into software as efficiently as possible."
     ,"experience": [
         {
+            "title": "Senior Systems Engineer"
+            ,"location": "Mitel (acquired ShoreTel in 2017)"
+            ,"description": "Worked on next-generation cloud application suite, CloudLink. Continued to mondernize ShoreTel product's scalability and CI/CD processes."
+            ,"date": "2017 - 2018"
+            ,"projects": [{
+                "name": "Google AI",
+                "description": "Created microservice to interact with Google's Contact Center AI that can be shared between the company's three major call center projects. Project was demonstrated at Google Next 2018."
+            },
+            {
+                "name": "MiCloud Connect Contact Center",
+                "description": "Continued to support efforts to improve CI/CD and scalability. Added facilities to allow automatic distributed service discovery for scalable components."
+            }],
+            "tags":["aws","gcp","ai","zookeeper","consul","docker","typescript","node.js","swagger","odata","REST"]
+        },
+        {
+            "title": "Associate Staff Software Engineer"
+            ,"location": "ShoreTel (aquired CovisaCloud 2016)"
+            ,"description": "Assisted in migrating a large, legacy, monolithic Windows C++ software suite to a containerized, cloud-capable Linux infrastructure."
+            ,"date": "2016 - 2017"
+            ,"projects": [{
+                "name": "Connect Cloud Contact Center",
+                "description": "Converted large Win32 C++ code-base to Linux using Wine. Containerized system. Solved technical scalability issues caused by original architecture and design"
+            }]
+            ,"tags":["linux","windows","wine","virtualization","docker","scalability","c++","c","node.js","make","msbuild","boost","ACE","legacy code","open source","PostgreSQL","MySql","ZeroMQ"]
+        },
+        {
             "title": "Software Engineer IV"
             ,"location": "CorvisaCloud, LLC"
-            ,"date": "March 2014 - Present"
-            ,"description":"Maintained and extended a real-time in-house Pusher-like API service. Made changes so application could be containerized, distributed, run, and auto-discover other nodes on an in-house cloud."
-            ,"projects":[]
-            ,"tags":["linux", "node.js", "virtualization", "zeromq", "nosql", "redis", "mongodb", "docker", "git", "open source", "Web Sockets", "distributed", "scalability", "container", "socket.io", "primus.io", "express", "pm2", "cluster", "nginx", "infrastructure", "phantomjs", "self-discovery"]
+            ,"date": "March 2014 - 2016"
+            ,"description":"Acted as a technical R&D lead to help design and create next-generation contact-center-as-a-service."
+            ,"projects": [
+                {
+                    "name": "Wallace.io",
+                    "description": "Maintained and extended a real-time Pusher.com-like API service. Made changes so application could be containerized, distributed, run, and auto-discover other nodes on an in-house cloud."
+                },
+                {
+                    "name": "Chicken-Run",
+                    "description": "Designed and built declarative, distributed stream processing library able to re-use with Django-based utilites for a contact-center-as-a-service API to run on an in-house cloud."
+                },
+                {
+                    "name": "Pseudo-Real-Time event servers",
+                    "description": "Used Chicken-Run to create TCP socket and websocket server to serve real-time-ish events through a flexible JSONPath subscription mechanism. Was later leverage to provide push events for third-party integration."
+                }
+            ]
+            ,"tags":["linux", "node.js", "virtualization", "zeromq", "nosql", "redis", "mongodb", "docker", "git", "open source", "Web Sockets", "distributed", "scalability", "container", "socket.io", "primus.io", "express", "pm2", "cluster", "nginx", "infrastructure", "phantomjs", "self-discovery","RabbitMQ","python","haproxy","PostgreSQL","redis","zookeeper","consul","CI/CD","bamboo"]
         }
         ,{
             "title": "Software Engineer IV"
